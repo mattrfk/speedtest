@@ -2,10 +2,36 @@
 	(loop for i from 2 to (- n 1)
 				never (= 0 (mod n i))))
 
-(defun primes(n)
+(defun findPrimes(n)
 	(loop for i from 1 to n
 				when (isPrime i)
 				collect i))
 
-(primes (parse-integer 
-					(car *args*)))
+(findPrimes (parse-integer 
+					(nth 1 *posix-argv*)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;(print (primes (parse-integer 
+;					(nth 1 *posix-argv*))))
